@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zulu NLP Processing System</title>
+    <title>IsiZulu Linear Pipeline Workflow</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
     <style>
         * {
@@ -457,7 +457,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>Zulu NLP Processing System</h1>
+            <h1>IsiZulu Linear Pipeline Workflow</h1>
             <p>Advanced morphological analysis for Zulu text and documents</p>
             <div class="status-indicator">
                 <div class="status-dot"></div>
@@ -893,8 +893,8 @@ Abantu abangasebenzisi ikhompyutha"
                         `;
                     } else {
                         const title = result.type === 'file' ? 
-                            `📄 ${result.filename}` : 
-                            `📝 Text Analysis ${index + 1}`;
+                            ` ${result.filename}` : 
+                            ` Text Analysis ${index + 1}`;
                             
                         resultContainer.innerHTML = `
                             <div class="analysis-header">
@@ -965,7 +965,7 @@ Abantu abangasebenzisi ikhompyutha"
                         
                         ${metrics.recommendations && metrics.recommendations.length > 0 ? `
                             <div style="margin-top: 20px;">
-                                <strong>📋 Recommendations:</strong>
+                                <strong> Recommendations:</strong>
                                 <ul style="margin-top: 10px; padding-left: 20px;">
                                     ${metrics.recommendations.map(rec => `<li style="margin-bottom: 5px;">${rec}</li>`).join('')}
                                 </ul>
@@ -974,14 +974,14 @@ Abantu abangasebenzisi ikhompyutha"
                         
                         ${fullReport.summary ? `
                             <div style="margin-top: 20px;">
-                                <strong>📊 Summary:</strong>
+                                <strong> Summary:</strong>
                                 <p style="margin-top: 10px; padding: 15px; background: #f8fafc; border-radius: 6px;">${fullReport.summary}</p>
                             </div>
                         ` : ''}
                         
                         ${fullReport.nextSteps ? `
                             <div style="margin-top: 20px;">
-                                <strong>🚀 Next Steps:</strong>
+                                <strong> Next Steps:</strong>
                                 <p style="margin-top: 10px; padding: 15px; background: #e6fffa; border-radius: 6px; color: #234e52;">${fullReport.nextSteps}</p>
                             </div>
                         ` : ''}
