@@ -885,7 +885,7 @@ Abantu abangasebenzisi ikhompyutha"
                     if (result.status === 'failed') {
                         resultContainer.innerHTML = `
                             <div class="analysis-header">
-                                <div class="analysis-title">❌ ${result.filename || `Analysis ${index + 1}`}</div>
+                                <div class="analysis-title"> ${result.filename || `Analysis ${index + 1}`}</div>
                             </div>
                             <div class="error">
                                 Processing failed: ${result.error || 'Unknown error'}
@@ -936,7 +936,7 @@ Abantu abangasebenzisi ikhompyutha"
                 return `
                     <div class="analysis-container" style="border-left-color: #48bb78;">
                         <div class="analysis-header">
-                            <div class="analysis-title">🔍 Pipeline Analysis Report</div>
+                            <div class="analysis-title">Pipeline Analysis Report</div>
                             <div class="analysis-stats">
                                 <span>Processing Time: ${metrics.totalProcessingTime || 'N/A'}</span>
                                 <span>Success Rate: ${metrics.successRate || 'N/A'}</span>
