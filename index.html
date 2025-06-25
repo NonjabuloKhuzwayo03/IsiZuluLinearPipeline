@@ -670,11 +670,11 @@ Abantu abangasebenzisi ikhompyutha"
                     const response = await axios.get(`${this.baseURL}/health`);
                     
                     if (response.data.status === 'healthy') {
-                        statusElement.textContent = '✅ Glitch server connected';
+                        statusElement.textContent = ' Glitch server connected';
                         statusElement.style.color = '#48bb78';
                     }
                 } catch (error) {
-                    statusElement.textContent = '❌ Glitch server disconnected';
+                    statusElement.textContent = ' Glitch server disconnected';
                     statusElement.style.color = '#f56565';
                     this.showError('Cannot connect to Glitch server. Please check the deployment status.');
                 }
